@@ -30,7 +30,7 @@ System.out.println("1. High (11 to 20)");
 System.out.println("2. Low (0 to 9)");
 System.out.println("3. Even(10)\n");
 int number=scanner.nextInt();
-//get random number
+//get random number(0-20)
 int randomNumber =random.nextInt(21); 
 //use boolean variable call win to clearly get count should +1 or not.
 boolean win = false;
@@ -82,8 +82,15 @@ else {
 
 System.out.println("Current Score: " + count+"\n");
 }
-//final score
-System.out.println("Total Score:"+count);
-	System.out.print("Congratulations you got"+ count+" out of "+roundNumber+" rounds right!");
+//print final score
+System.out.println("Total Score: "+count);
+//if user get more than zero score,this will print.
+if (count>0){
+	System.out.print("Congratulations you got"+" "+count+" out of "+ roundNumber+" rounds right!");
+}
+//if user get zero score,this will print
+else{
+	System.out.print("you got"+" "+ count+" out of "+ roundNumber+" correct. "+" Better Luck next time.");
+}
 }
 }
