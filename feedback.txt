@@ -1,0 +1,28 @@
+K(30%): 100
+I(30%): 87
+C(10%): 75
+A(30%): 90
+90.6% 90 - 81.54
+
+Missing Documentation
+No reason to check if the random number is less than 20 or greater than 0 since you already ensure that with your generation of it.
+Don't write "win == true"  just write win.  It is already a boolean with a true or false value that will result in the same thing when compared to a true boolean.
+Congratulations should only be when they get at least HALF of them right.
+You're also checking the values to see if they are value, but not if they are actually integers.
+No reason to repeat:
+
+if (number == 1 && randomNumber >= 11 && randomNumber <= 20) {
+				win = true;
+			}
+			// follow selection 2
+			if (number == 2 && randomNumber >= 0 && randomNumber <= 9) {
+				win = true;
+			}
+			// follow selection 3
+			if (number == 3 && randomNumber == 10) {
+				win = true;
+			}
+
+Only need to repeat your prompts and input.
+
+Otherwise good work!
